@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- viewport-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <style>
+
+.layout {
+    display: grid;
+    grid: 
+    [header-start] "header header header" 100px 
+    [content-start] "nav main aside" 400px
+    [footer-start] "footer footer footer" 100px 
+    /[ads] 200px [main] 1fr [links] 200px; 
+}
+
+#header { grid-area: header;
+background-color: rgb(215, 250, 224);
+font-size: large;
+color: rgb(124, 94, 139);
+margin: 1px ; 
+padding: 10px;
+border-radius: 30px;}
+
+#nav {grid-area: nav;
+
+background-color: rgb(177, 177, 177);
+font-size: medium;
+color:aliceblue
+margin: 1px;
+padding: 10px;
+
+border-top-right-radius: 30px;
+border-bottom-left-radius: 30px; }
+
+#main {grid-area: main;
+
+    background-color: rgb(255, 232, 232);
+font-size: medium;
+color:rgb(0, 0, 0)
+margin: 1px;
+padding: 10px;
+border-radius: 30px;
+}
+
+
+
+
+#aside {grid-area: aside;
+
+    background-color: rgb(171, 197, 241);
+font-size: medium;
+color:rgb(0, 0, 0)
+margin: 1px;
+padding: 10px;
+
+border-top-left-radius: 30px;
+border-bottom-right-radius: 30px; 
+
+}
+
+#footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      width: 100%;
+    }
+
+
+   
+  </style>
+
+
+</head>
+
+
+
+<body>
+    <div class="layout">
+        <div class="grid-item" id="header">
+            <p> 웹 프로그래밍 과제 6주차 </p>
+
+
+
+
+
+
+        </div>
+
+        <div class="grid-item" id="nav"> 
+
+             <a href ="time table.html"> 시간표 바로가기 </a>
+            <br> 
+            <br>
+            <a href ="city.html"> 살았던 도시 바로가기 </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>즐겨찾는 웹사이트 </p>
+            <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjWr6C58tX6AhVW8WEKHXXbAtkQPAgI">구글 바로가기</a>
+            <br>
+            <br>
+            <a href ="https://www.naver.com/"> 네이버 바로가기 </a>
+            <br>
+            <br>
+
+            <a href ="https://www.yonsei.ac.kr/sc/index.jsp"> 연세대학교 알아보기 </a>
+        
+        
+        </div>
+
+        <div class="grid-item" id="main"> 
+
+            <p>
+                자기소개/관심사
+                <br>
+                <br>
+                수업시간표
+                <br>
+                <br>
+                내가 살았던 도시
+                <br>
+                <br>
+                즐겨찾는 사이트
+                <br>
+                <br>
+                문서간 상호링크
+                <br>
+                <br>
+                semantic 태그 적용
+
+                <br>
+
+                bootstrap grid 적용
+
+                <br>
+
+                responsive layout 구현
+
+                <br>
+
+                bootstrap navbar 적용
+
+                <br>
+
+                bootstrap icon 사용
+
+            </p>
+        </div>  
+        <div class="grid-item" id="aside">
+            
+            <a href ="index.html"> 자기 소개 페이지 바로가기 </a>
+            </div>
+
+
+        <div class="grid-item" id="footer">
+            <p> copyright 2022@</p>
+
+            
+        </div>
+
+
+
+   
+</body>
+</html>
